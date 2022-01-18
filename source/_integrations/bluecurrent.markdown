@@ -4,6 +4,7 @@ description: Instructions on how to integrate Blue Current charge points within 
 ha_category:
   - Sensor
   - Switch
+  - Button
   - Car
 ha_release: 2021.10
 ha_iot_class: Cloud Push
@@ -14,6 +15,7 @@ ha_domain: bluecurrent
 ha_platforms:
   - sensor
   - switch
+  - button
 ---
 
 [BlueCurrent](https://www.bluecurrent.nl/) is an Dutch company that makes electric car chargers.
@@ -63,3 +65,12 @@ The Blue Current integration provides the following switches:
 - available
 - plug_and_charge
 - public_charging
+
+## Button
+
+The Blue Current integration provides the following buttons:
+
+- reset
+- reboot
+- start_session
+- stop_session

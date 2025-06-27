@@ -90,3 +90,28 @@ Start a new charge session. When no charging card ID is provided, the default ch
 | -------------- | -------- | ----------- |
 | `device_id` | no | Charge point device ID |
 | `charging_card_id` | yes | Charging card ID that will be used to start a charge session. |
+
+### Action set_delayed_charging
+
+Set the currently active smart charging profile to Delayed Charing with the provided settings.
+View more information about Delayed Charging [here](https://help.bluecurrent.nl/knowledge/uitgesteld-laden/).
+
+| Data attribute | Optional | Description |
+| -------------- | -------- | ----------- |
+| `device_id` | no | Charge point device ID. |
+| `days` | no | Days when delayed charging is active. |
+| `end_time` | no | Time when charging will stop. |
+| `start_time` | no | Time when charging will continue again. |
+
+
+### Action set_price_based_charging
+
+Set the currently active smart charging profile to Price-Based Charging with the provided settings.
+View more information about Price-Bassed Charging [here](https://help.bluecurrent.nl/knowledge/laden-op-prijs/).
+
+| Data attribute | Optional | Description |
+| -------------- | -------- | ----------- |
+| `device_id` | no | Charge point device ID. |
+| `expected_departure_time` | no | Expected departure time. |
+| `expected_charging_session_size` | no | Expected size in kWh. |
+| `immediately_charge` | no | Immediately charge given amount in kWh. |
